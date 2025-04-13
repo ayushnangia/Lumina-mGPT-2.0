@@ -90,7 +90,7 @@ def prepare_dataset(image_save_dir: Path, output_json_path: Path):
                     },
                 ],
                 # Store the absolute path to the saved image
-                "image": str(image_save_path.resolve())
+                "image_path": str(image_save_path.resolve())
             }
             output_data.append(conversation_entry)
 
