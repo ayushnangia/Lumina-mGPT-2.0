@@ -90,7 +90,9 @@ def prepare_dataset(image_save_dir: Path, output_json_path: Path):
                     },
                 ],
                 # Store the absolute path to the saved image
-                "image_path": str(image_save_path.resolve())
+                "image_path": str(image_save_path.resolve()),
+                # Add the prompt as a top-level key for the pre-tokenizer
+                "prompt": caption
             }
             output_data.append(conversation_entry)
 

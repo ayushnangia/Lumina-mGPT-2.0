@@ -42,7 +42,7 @@ done
                 "value": "<|image|>"
             },
         ],
-        "image": "/path/to/image1.png",
+        "image_path": "/path/to/image1.png",
     },
     {...},
     {...}
